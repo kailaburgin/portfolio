@@ -12,12 +12,12 @@ const Intro = () => {
     <Box color='brand.500' maxW='1096px' margin='auto' mt='100px' borderRadius='12px' overflow='hidden' boxShadow='-5px 5px 10px 0px rgba(51, 41, 36, 0.40)'>
     <Flex>
         <Box bg='brand.100' textAlign='center' p='100px'>
-            <Heading>kaila burgin</Heading>
+            <Heading as='h2'>kaila burgin</Heading>
             <Text mb='32px' mt='24px' fontSize='2xl'>Front End Web Developer</Text>
             <Button color='brand.300' w='240px'>Download Resume</Button>
         </Box>
         <Flex bg='brand.300' direction='column' textAlign='center' justifyContent='center' pl='280px' pr='280px'>
-            <Heading mb='24px'>skills</Heading>
+            <Heading as='h2' mb='24px'>skills</Heading>
             <Stack>
                 <Flex>
                 <HTMLIcon boxSize='6' mr='12px'/>
