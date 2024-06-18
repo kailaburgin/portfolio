@@ -1,33 +1,28 @@
 import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
-  styles: {
-    global: {
-      // styles for the `body`
-      body: {
-        color: "9E7138",
-      },
-      // styles for the `a`
-      h1: {
-        color: "#8C5B72",
-      },
+  colors: {
+    brand: {
+      // green/blue
+      // 100: "#EEC7BE",
+      // 200: "#E2B055",
+      // 300: "#FFECD8",
+      // 400: "#F0F2CF",
+      // 500: "#DCF4F7",
+      // 600: "#00515B",
+      // 700: "#FFFAF3",
+      100: "#EFD6D0",
+      200: "#F1E4D4",
+      300: "#D3A166",
+      400: "#D3CBD2",
+      500: "#332924",
     },
   },
+  fonts: {
+    body: "sans-serif",
+    heading: "serif",
+    mono: "serif",
+  },
 });
-
-// const colors = {
-//   brand: {
-//     900: "#FFFAF3",
-//     800: "#8C5B72",
-//     700: "#9E7138",
-//   },
-// };
-
-// const fonts = {
-//   body: "Quicksand",
-//   heading: "Bodoni Moda",
-// };
-
-// const theme = extendTheme({ colors, fonts });
 
 export default theme;

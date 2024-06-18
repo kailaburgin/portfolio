@@ -4,7 +4,8 @@ import ColorModeSwitch from './ColorModeSwitch'
 
 const NavBar = () => {
   return (
-    <Flex justifyContent='space-between' alignContent='center' ml='24px' mr='24px' borderBottom='solid 1px'>
+    <Box bg='brand.200' color='brand.500' fontFamily='serif'>
+    <Flex justifyContent='space-between' alignContent='center' ml='24px' mr='24px'>
         <Text as='b' fontSize='5xl'>kb</Text>
         <HStack>
             <Link mr='24px' fontSize='lg'>Home</Link>
@@ -14,6 +15,7 @@ const NavBar = () => {
         </HStack>
         {/* <ColorModeSwitch /> */}
     </Flex>
+    </Box>
   )
 }
 
