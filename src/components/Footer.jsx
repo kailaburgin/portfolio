@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <Box bg="brand.200" color="brand.500" fontFamily="serif">
+    <Box fontFamily="serif">
       <Flex
         justifyContent="space-between"
         alignContent="center"
