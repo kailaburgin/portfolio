@@ -1,8 +1,6 @@
-import { Box, Flex, HStack, Link, Text } from "@chakra-ui/react";
 import React from "react";
-import ColorModeSwitch from "./ColorModeSwitch";
 
-const NavBar = () => {
+const Footer = () => {
   return (
     <Box fontFamily="serif">
       <Flex
@@ -16,7 +14,7 @@ const NavBar = () => {
         </Text>
         <HStack fontFamily="sans-serif">
           <Link mr="24px" ml="24px" fontSize="lg">
-            Projects
+            Projects!
           </Link>
           <Link mr="24px" ml="24px" fontSize="lg">
             About
@@ -25,10 +23,9 @@ const NavBar = () => {
             Contact
           </Link>
         </HStack>
-        {/* <ColorModeSwitch /> */}
       </Flex>
     </Box>
   );
 };
 
-export default NavBar;
+export default Footer;
