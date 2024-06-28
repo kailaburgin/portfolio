@@ -12,7 +12,7 @@ const Footer = () => {
         <Text as="b" fontSize="5xl">
           kb
         </Text>
-        <HStack fontFamily="sans-serif">
+        <HStack>
           <Link mr="24px" ml="24px" fontSize="lg">
             Projects!
           </Link>
