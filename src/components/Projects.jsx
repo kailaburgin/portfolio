@@ -18,7 +18,7 @@ const Projects = () => {
       <Flex justifyContent="space-evenly" h="300px">
         <Card borderRadius="12px" w="350px">
           <CardBody>
-            <Button variant="ghost" fontSize="2xl" fontFamily="serif">
+            <Button variant="ghost" fontSize="2xl">
               Game Finder
             </Button>
           </CardBody>
@@ -31,7 +31,7 @@ const Projects = () => {
         </Card>
         <Card borderRadius="12px" w="350px">
           <CardBody>
-            <Button variant="ghost" fontSize="2xl" fontFamily="serif">
+            <Button variant="ghost" fontSize="2xl">
               Appointment Planner
             </Button>
           </CardBody>
@@ -43,7 +43,7 @@ const Projects = () => {
         </Card>
         <Card bg="brand.200" borderRadius="12px" w="350px">
           <CardBody>
-            <Button variant="ghost" fontSize="2xl" fontFamily="serif">
+            <Button variant="ghost" fontSize="2xl">
               Playlist Creator
             </Button>
           </CardBody>

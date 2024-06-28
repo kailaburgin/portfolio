@@ -4,7 +4,7 @@ import ColorModeSwitch from "./ColorModeSwitch";
 
 const NavBar = () => {
   return (
-    <Box fontFamily="serif">
+    <Box>
       <Flex
         justifyContent="space-between"
         alignContent="center"
@@ -14,7 +14,7 @@ const NavBar = () => {
         <Text as="b" fontSize="5xl">
           kb
         </Text>
-        <HStack fontFamily="sans-serif">
+        <HStack>
           <Link mr="24px" ml="24px" fontSize="lg">
             Projects
           </Link>
