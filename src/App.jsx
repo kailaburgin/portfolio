@@ -8,8 +8,8 @@ function App() {
   return (
     <>
       <NavBar />
-      {/* <Intro />
-      <Projects />
+      <Intro />
+      {/* <Projects />
       <About /> */}
     </>
   );
