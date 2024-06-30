@@ -1,33 +1,31 @@
-import { Box, Flex, HStack, Link, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex,
+  Hide,
+  HStack,
+  Link,
+  Show,
+  Text,
+} from "@chakra-ui/react";
 import React from "react";
 import ColorModeSwitch from "./ColorModeSwitch";
 
 const NavBar = () => {
   return (
-    <Box>
-      <Flex
-        justifyContent="space-between"
-        alignContent="center"
-        ml="24px"
-        mr="24px"
-      >
-        <Text as="b" fontSize="5xl">
-          kb
-        </Text>
-        <HStack>
-          <Link mr="24px" ml="24px" fontSize="lg">
-            Projects
-          </Link>
-          <Link mr="24px" ml="24px" fontSize="lg">
-            About
-          </Link>
-          <Link ml="24px" fontSize="lg">
-            Contact
-          </Link>
+    <Flex justifyContent="space-around" mt="32px">
+      <Text as="b" fontSize={32}>
+        kaila burgin
+      </Text>
+      <Hide breakpoint="(max-width: 550px)">
+        <HStack spacing={5}>
+          <Button bg="purple.300" color="white" size="lg" fontSize={20}>
+            contact
+          </Button>
+          <ColorModeSwitch />
         </HStack>
-        {/* <ColorModeSwitch /> */}
-      </Flex>
-    </Box>
+      </Hide>
+    </Flex>
   );
 };
 
