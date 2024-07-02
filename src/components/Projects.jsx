@@ -1,5 +1,7 @@
 import React from "react";
 import {
+  Text,
+  Hide,
   Heading,
   Card,
   CardBody,
@@ -7,55 +9,63 @@ import {
   CardFooter,
   Divider,
   Flex,
+  Box,
+  VStack,
+  HStack,
 } from "@chakra-ui/react";
+import projects from "./projects";
 
 const Projects = () => {
   return (
-    <>
-      <Heading as="h2" mt="100px" mb="100px" textAlign="center">
-        projects
-      </Heading>
-      <Flex justifyContent="space-evenly" h="300px">
-        <Card borderRadius="12px" w="350px">
-          <CardBody>
-            <Button variant="ghost" fontSize="2xl">
-              Game Finder
-            </Button>
-          </CardBody>
-          <Divider />
-          <CardFooter textAlign="justify">
-            A video game search app that displays a game's artwork, name,
-            platforms, and ratings. Rawg.io database API is used. This project
-            implements a search bar, sorting filters, and a dark mode switch.{" "}
-          </CardFooter>
-        </Card>
-        <Card borderRadius="12px" w="350px">
-          <CardBody>
-            <Button variant="ghost" fontSize="2xl">
-              Appointment Planner
-            </Button>
-          </CardBody>
-          <Divider />
-          <CardFooter textAlign="justify">
-            An appointment tracking app in which you can create a list of
-            appointments with existing contacts. This project implements forms.
-          </CardFooter>
-        </Card>
-        <Card bg="brand.200" borderRadius="12px" w="350px">
-          <CardBody>
-            <Button variant="ghost" fontSize="2xl">
-              Playlist Creator
-            </Button>
-          </CardBody>
-          <Divider />
-          <CardFooter textAlign="justify">
-            An app to make music playlists and save them to spotify. Spotify API
-            is used. This project implements a search function with a section to
-            display results and another section that shows the playlist.
-          </CardFooter>
-        </Card>
+    <Box textAlign="center">
+      <Box mb={5}>
+        <Text as="b" fontSize="24px">
+          projects
+        </Text>
+      </Box>
+      <Flex justifyContent="center" alignItems="center">
+        <Button border="solid 2px #B794F4" bg="white" mr="32px">
+          {"<"}
+        </Button>
+        <Flex justifyContent="center">
+          <Hide breakpoint="(max-width: 763px)">
+            <VStack mr={4}>
+              <Flex
+                border="solid 2px #B794F4"
+                borderRadius="8px"
+                h="150px"
+                w="150px"
+                justifyContent="center"
+                alignItems="center"
+              >
+                <Text as="b">Project Name</Text>
+              </Flex>
+              <Flex
+                border="solid 2px #B794F4"
+                borderRadius="8px"
+                h="150px"
+                w="150px"
+                justifyContent="center"
+                alignItems="center"
+              >
+                <Text>Project Description</Text>
+              </Flex>
+            </VStack>
+          </Hide>
+          <Box
+            border="solid 2px #B794F4"
+            borderRadius="8px"
+            h="308px"
+            w="250px"
+          >
+            project screenshot
+          </Box>
+        </Flex>
+        <Button border="solid 2px #B794F4" bg="white" ml="32px">
+          {">"}
+        </Button>
       </Flex>
-    </>
+    </Box>
   );
 };
 

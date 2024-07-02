@@ -9,8 +9,8 @@ function App() {
     <>
       <NavBar />
       <Intro />
-      {/* <Projects />
-      <About /> */}
+      <Projects />
+      {/* <About /> */}
     </>
   );
 }
