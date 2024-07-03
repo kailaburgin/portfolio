@@ -13,7 +13,7 @@ import {
   VStack,
   HStack,
 } from "@chakra-ui/react";
-import projects from "./projects";
+// import projects from "projects_test";
 
 const Projects = () => {
   return (
