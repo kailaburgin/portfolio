@@ -12,8 +12,10 @@ import {
   Box,
   VStack,
   HStack,
+  Image,
+  Img,
 } from "@chakra-ui/react";
-// import projects from "projects_test";
+import obj_projects from "./projectData";
 
 const Projects = () => {
   return (
@@ -38,7 +40,7 @@ const Projects = () => {
                 justifyContent="center"
                 alignItems="center"
               >
-                <Text as="b">Project Name</Text>
+                <Text as="b">{obj_projects.spotify.name}</Text>
               </Flex>
               <Flex
                 border="solid 2px #B794F4"
@@ -48,7 +50,9 @@ const Projects = () => {
                 justifyContent="center"
                 alignItems="center"
               >
-                <Text>Project Description</Text>
+                <Text noOfLines={5} m="4px">
+                  {obj_projects.spotify.description}
+                </Text>
               </Flex>
             </VStack>
           </Hide>
@@ -56,9 +60,14 @@ const Projects = () => {
             border="solid 2px #B794F4"
             borderRadius="8px"
             h="308px"
-            w="250px"
+            w="450px"
           >
-            project screenshot
+            <Image
+              src={obj_projects.spotify.picture}
+              overflow="hidden"
+              minH="100%"
+              borderRadius="6px"
+            />
           </Box>
         </Flex>
         <Button border="solid 2px #B794F4" bg="white" ml="32px">
