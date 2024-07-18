@@ -2,18 +2,16 @@ import React from "react";
 import {
   Text,
   Hide,
-  Heading,
-  Card,
-  CardBody,
   Button,
-  CardFooter,
-  Divider,
   Flex,
   Box,
   VStack,
-  HStack,
   Image,
-  Img,
+  Card,
+  CardHeader,
+  CardBody,
+  Divider,
+  CardFooter,
 } from "@chakra-ui/react";
 import obj_projects from "./projectData";
 
@@ -25,12 +23,12 @@ const Projects = () => {
           projects
         </Text>
       </Box>
-      <Flex justifyContent="center" alignItems="center">
-        <Button border="solid 2px #B794F4" bg="white" mr="32px">
+      <Flex justifyContent="center" alignItems="center" wrap="wrap">
+        {/* <Button bg="purple.300" color="white" mr="32px">
           {"<"}
-        </Button>
-        <Flex justifyContent="center">
-          <Hide breakpoint="(max-width: 763px)">
+        </Button> */}
+        {/* <Flex justifyContent="center">
+        <Hide breakpoint="(max-width: 763px)">
             <VStack mr={4}>
               <Flex
                 border="solid 2px #B794F4"
@@ -55,24 +53,47 @@ const Projects = () => {
                 </Text>
               </Flex>
             </VStack>
-          </Hide>
-          <Box
-            border="solid 2px #B794F4"
+          </Hide> */}
+        {obj_projects.map((proj) => (
+          <Card m={4}>
+            <CardBody w="450px" minH="475px">
+              <Image
+                src={proj.picture}
+                overflow="hidden"
+                minH="100%"
+                w="400px"
+                borderRadius="4px"
+                border="solid 1px RGBA(0, 0, 0, 0.08)"
+              />
+              <VStack mt="4px">
+                <CardHeader fontSize="18px" as="b">
+                  {proj.name}
+                </CardHeader>
+                <Text>{proj.description}</Text>
+              </VStack>
+            </CardBody>
+          </Card>
+        ))}
+        {/* <Box
+          // border="solid 2px #B794F4"
+          borderRadius="8px"
+          h="308px"
+          w="650px"
+        >
+          <Image
+            src={obj_projects.spotify.picture}
+            overflow="hidden"
+            minH="100%"
             borderRadius="8px"
-            h="308px"
-            w="450px"
-          >
-            <Image
-              src={obj_projects.spotify.picture}
-              overflow="hidden"
-              minH="100%"
-              borderRadius="6px"
-            />
-          </Box>
-        </Flex>
-        <Button border="solid 2px #B794F4" bg="white" ml="32px">
+          />
+          <Text mt="-40px">
+            {obj_projects.spotify.name}
+          </Text>
+        </Box> */}
+        {/* </Flex> */}
+        {/* <Button bg="purple.300" color="white" ml="32px">
           {">"}
-        </Button>
+        </Button> */}
       </Flex>
     </Box>
   );
