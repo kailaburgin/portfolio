@@ -12,6 +12,7 @@ import {
   CardBody,
   Divider,
   CardFooter,
+  SimpleGrid,
 } from "@chakra-ui/react";
 import obj_projects from "./projectData";
 
@@ -23,11 +24,11 @@ const Projects = () => {
           projects
         </Text>
       </Box>
-      <Flex justifyContent="center" alignItems="center" wrap="wrap">
-        {/* <Button bg="purple.300" color="white" mr="32px">
+      {/* <Flex justifyContent="center" alignItems="center" wrap="wrap"> */}
+      {/* <Button bg="purple.300" color="white" mr="32px">
           {"<"}
         </Button> */}
-        {/* <Flex justifyContent="center">
+      {/* <Flex justifyContent="center">
         <Hide breakpoint="(max-width: 763px)">
             <VStack mr={4}>
               <Flex
@@ -54,14 +55,21 @@ const Projects = () => {
               </Flex>
             </VStack>
           </Hide> */}
+      <SimpleGrid
+        minChildWidth="380px"
+        // columns={{ sm: 1, md: 2, lg: 2, xl: 3 }}
+        spacing={6}
+        mr={80}
+        ml={80}
+      >
         {obj_projects.map((proj) => (
-          <Card m={4}>
-            <CardBody w="450px" minH="475px">
+          <Card m={4} key={proj.name}>
+            <CardBody>
               <Image
                 src={proj.picture}
                 overflow="hidden"
-                minH="100%"
-                w="400px"
+                minW="100%"
+                w="180px"
                 borderRadius="4px"
                 border="solid 1px RGBA(0, 0, 0, 0.08)"
               />
@@ -74,7 +82,8 @@ const Projects = () => {
             </CardBody>
           </Card>
         ))}
-        {/* <Box
+      </SimpleGrid>
+      {/* <Box
           // border="solid 2px #B794F4"
           borderRadius="8px"
           h="308px"
@@ -90,11 +99,11 @@ const Projects = () => {
             {obj_projects.spotify.name}
           </Text>
         </Box> */}
-        {/* </Flex> */}
-        {/* <Button bg="purple.300" color="white" ml="32px">
+      {/* </Flex> */}
+      {/* <Button bg="purple.300" color="white" ml="32px">
           {">"}
         </Button> */}
-      </Flex>
+      {/* </Flex> */}
     </Box>
   );
 };
