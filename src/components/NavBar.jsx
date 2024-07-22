@@ -20,7 +20,7 @@ const NavBar = () => {
       <Hide breakpoint="(max-width: 550px)">
         <HStack spacing={5}>
           <Button bg="purple.300" color="white" size="lg" fontSize={20}>
-            contact
+            github
           </Button>
           <ColorModeSwitch />
         </HStack>

@@ -41,6 +41,13 @@ const obj_projects = [
     picture: "../../public/games.jpg",
     skills: "typescript, react",
   },
+  {
+    name: "Kaila Creating",
+    description:
+      "A website that showcases my recent sewing projects from my creative Instagram account. Built with HTML and CSS, this was my first independent project in my coding journey.",
+    picture: "../../public/kailacreating.jpg",
+    skills: "html, css",
+  },
 ];
 
 export default obj_projects;
