@@ -1,4 +1,4 @@
-import Spotify from "../../public/spotify.jpg";
+import Spotify from "../assets/spotify.jpg";
 // const obj_projects = {
 //   spotify: {
 //     name: "Spotify Playlist Creator",
