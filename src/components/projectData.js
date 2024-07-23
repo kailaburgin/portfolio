@@ -10,7 +10,7 @@ const obj_projects = [
       "An app to search for music, make playlists, and save them to spotify. The Spotify API is used. This project implements a search function with a section to display results and another section that shows the playlist.",
     picture: Spotify,
     skills: "javascript, react",
-    link: "..",
+    link: "https://jammming-beta.vercel.app/",
   },
   {
     name: "Appointment Planner",
