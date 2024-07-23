@@ -58,8 +58,8 @@ const Projects = () => {
       <SimpleGrid
         minChildWidth="380px"
         spacing={6}
-        mr={{sm: 20, md: 20, lg: 20, xl: 40}}
-        ml={{sm: 20, md: 20, lg: 20, xl: 40}}
+        mr={{ sm: 20, md: 20, lg: 20, xl: 40 }}
+        ml={{ sm: 20, md: 20, lg: 20, xl: 40 }}
       >
         {obj_projects.map((proj) => (
           <Card m={4} key={proj.name}>
