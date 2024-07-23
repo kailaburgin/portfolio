@@ -1,15 +1,13 @@
-import React from "react";
 import {
   Box,
   ButtonGroup,
-  Flex,
   IconButton,
   Link,
   Text,
   Tooltip,
 } from "@chakra-ui/react";
+import React from "react";
 import EmailIcon from "../assets/EmailIcon";
-import LinkedInIcon from "../assets/LinkedInIcon";
 import InstagramIcon from "../assets/InstagramIcon";
 
 const Footer = () => {

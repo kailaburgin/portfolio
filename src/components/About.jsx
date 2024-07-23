@@ -1,14 +1,4 @@
-import {
-  Box,
-  Flex,
-  HStack,
-  Heading,
-  Hide,
-  Image,
-  Show,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
+import { Box, HStack, Image, Show, Text } from "@chakra-ui/react";
 import React from "react";
 import Coding from "../assets/coding.jpg";
 

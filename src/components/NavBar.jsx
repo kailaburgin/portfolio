@@ -1,13 +1,4 @@
-import {
-  Box,
-  Button,
-  Flex,
-  Hide,
-  HStack,
-  Link,
-  Show,
-  Text,
-} from "@chakra-ui/react";
+import { Button, Flex, Hide, HStack, Link, Text } from "@chakra-ui/react";
 import React from "react";
 import ColorModeSwitch from "./ColorModeSwitch";
 
