@@ -10,6 +10,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import React from "react";
+import Coding from "../assets/coding.jpg";
 
 const About = () => {
   return (
@@ -47,7 +48,7 @@ const About = () => {
             impact.
           </Text>
           <Show breakpoint="(min-width: 2000px)">
-            <Image src="../public/coding.jpg" borderRadius="8px" />
+            <Image src={Coding} borderRadius="8px" />
           </Show>
         </HStack>
       </Box>
