@@ -1,3 +1,4 @@
+import Spotify from "../../public/spotify.jpg";
 // const obj_projects = {
 //   spotify: {
 //     name: "Spotify Playlist Creator",
@@ -24,7 +25,7 @@ const obj_projects = [
     name: "Spotify Playlist Creator",
     description:
       "An app to search for music, make playlists, and save them to spotify. The Spotify API is used. This project implements a search function with a section to display results and another section that shows the playlist.",
-    picture: "../../public/spotify.jpg",
+    picture: Spotify,
     skills: "javascript, react",
     link: "..",
   },
