@@ -18,7 +18,7 @@ const obj_projects = [
       "An appointment tracking app in which you can create a list of appointments with existing contacts. This project implements forms.",
     picture: Appointments,
     skills: "html, css, forms",
-    link: "..",
+    link: "https://appointmentplanner-8ggq0eeri-kailas-projects-05bb5e18.vercel.app/contacts",
   },
   {
     name: "Video Game Discovery",
@@ -34,7 +34,7 @@ const obj_projects = [
       "A website that showcases my recent sewing projects from my creative Instagram account. Built with HTML and CSS, this was my first independent project in my coding journey.",
     picture: KailaCreating,
     skills: "html, css",
-    link: "..",
+    link: "https://kailaburgin.github.io/kaila-creating/",
   },
 ];
 
