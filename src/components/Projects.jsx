@@ -13,7 +13,9 @@ import {
   Divider,
   CardFooter,
   SimpleGrid,
+  Link,
 } from "@chakra-ui/react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 import obj_projects from "./projectData";
 
 const Projects = () => {
@@ -74,7 +76,9 @@ const Projects = () => {
               />
               <VStack mt="4px">
                 <CardHeader fontSize="18px" as="b">
-                  {proj.name}
+                  <Link href={proj.link} isExternal>
+                    {proj.name} <ExternalLinkIcon mx="2px" />
+                  </Link>
                 </CardHeader>
                 <Text>{proj.description}</Text>
               </VStack>
