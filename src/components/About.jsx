@@ -1,4 +1,4 @@
-import { Box, HStack, Image, Show, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Show, Text } from "@chakra-ui/react";
 import React from "react";
 import Coding from "../assets/coding.jpg";
 
@@ -11,12 +11,11 @@ const About = () => {
         </Text>
       </Box>
       <Box bg="purple.300" p={20}>
-        <HStack
-          mr={{ sm: 20, md: 20, lg: 20, xl: 40 }}
-          ml={{ sm: 20, md: 20, lg: 20, xl: 40 }}
-          spacing={40}
+        <Flex
+          justifyContent="center"
+          alignItems="center"
         >
-          <Text fontSize="xl">
+          <Text fontSize="xl" maxW="1000px">
             Over the past five years, I dedicated myself to a career as a
             physician assistant, but recently, I made a decision to pivot into
             front-end web development. This transition has been both exciting
@@ -31,16 +30,16 @@ const About = () => {
             functionality, crafting intuitive and visually compelling
             experiences for users. Beyond coding, I find joy in sewing, baking,
             and staying active through workouts. I also thrive on connecting
-            with loved ones, whether through gatherings or coaching as a fitness
+            with friends and family, whether through gatherings or coaching as a fitness
             instructor at Solidcore. My goal is to continue growing in web
             development, leveraging my diverse background to create meaningful
             digital solutions that resonate with users and make a positive
             impact.
           </Text>
           <Show breakpoint="(min-width: 2000px)">
-            <Image src={Coding} borderRadius="8px" />
+            <Image src={Coding} borderRadius="8px" pl={36} />
           </Show>
-        </HStack>
+        </Flex>
       </Box>
     </Box>
   );
