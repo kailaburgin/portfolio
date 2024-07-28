@@ -9,8 +9,9 @@ const NavBar = () => {
       <Text as="b" fontSize={32}>
         kaila burgin
       </Text>
-      <Hide breakpoint="(max-width: 550px)">
+      {/* <Hide breakpoint="(max-width: 550px)"> */}
         <HStack spacing={5}>
+        <Hide breakpoint="(max-width: 550px)">
           <Link
             onClick={(e) => {
               window.open(githubLink, "_blank").focus();
@@ -20,9 +21,10 @@ const NavBar = () => {
               github
             </Button>
           </Link>
+          </Hide>
           <ColorModeSwitch />
         </HStack>
-      </Hide>
+      {/* </Hide> */}
     </Flex>
   );
 };
