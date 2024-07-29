@@ -6,6 +6,7 @@ import {
   CardHeader,
   Image,
   Link,
+  LinkOverlay,
   SimpleGrid,
   Text,
   VStack,
@@ -30,19 +31,19 @@ const Projects = () => {
         {obj_projects.map((proj) => (
           <Card m={4} key={proj.name}>
             <CardBody>
-              <Image
-                src={proj.picture}
-                overflow="hidden"
-                minW="100%"
-                w="180px"
-                borderRadius="4px"
-                border="solid 1px RGBA(0, 0, 0, 0.08)"
-              />
+              <LinkOverlay href={proj.link}>
+                <Image
+                  src={proj.picture}
+                  overflow="hidden"
+                  minW="100%"
+                  w="180px"
+                  borderRadius="4px"
+                  border="solid 1px RGBA(0, 0, 0, 0.08)"
+                />
+              </LinkOverlay>
               <VStack mt="4px">
                 <CardHeader fontSize="18px" as="b">
-                  <Link href={proj.link} isExternal>
-                    {proj.name} <ExternalLinkIcon mx="2px" />
-                  </Link>
+                  {proj.name}
                 </CardHeader>
                 <Text>{proj.description}</Text>
               </VStack>
